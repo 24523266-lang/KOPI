@@ -1,0 +1,144 @@
+:root {
+  --green: #2E8B57;
+  --green-light: #E8F5E9;
+  --white: #FFFFFF;
+  --gray-bg: #F5F5F5;
+  --red: #FF6B6B;
+  --blue: #4285F4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-page {
+  background: var(--green-light);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.logo h1 {
+  color: var(--green);
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.logo p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.auth-form .input-group {
+  margin: 15px 0;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 2px rgba(46, 139, 87, 0.2);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: var(--green);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #227a4b;
+  transform: translateY(-2px);
+}
+
+.divider {
+  margin: 20px 0;
+  color: #888;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-google:hover {
+  background: #e5e5e5;
+  transform: translateY(-2px);
+}
+
+.link {
+  margin-top: 20px;
+  color: #666;
+}
+
+.link a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.link a:hover {
+  color: #227a4b;
+}
