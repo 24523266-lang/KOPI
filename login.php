@@ -9,7 +9,7 @@
 <body class="auth-page">
   <div class="auth-container">
     <div class="illustration">
-      <img src="assets/img/illustration-login.png" alt="Ilustrasi Login" />
+      <img src="assets/img/finance-illustration.png" alt="Ilustrasi" />
     </div>
 
     <div class="form-section">
